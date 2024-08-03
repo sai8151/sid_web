@@ -3568,6 +3568,7 @@
       overflow: hidden;
     }
 
+    /* Ensure search field width and padding */
     .ast-mobile-header-content .ast-search-menu-icon.ast-inline-search .search-field,
     .ast-mobile-header-content .ast-search-menu-icon .search-field,
     .ast-desktop-header-content .ast-search-menu-icon.ast-inline-search .search-field,
@@ -3576,6 +3577,7 @@
       padding-right: 5.5em;
     }
 
+    /* Search submit button positioning */
     .ast-mobile-header-content .ast-search-menu-icon .search-submit,
     .ast-desktop-header-content .ast-search-menu-icon .search-submit {
       display: block;
@@ -3587,6 +3589,7 @@
       border-radius: 0;
     }
 
+    /* Menu link padding adjustments */
     .ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation ul .sub-menu .menu-link {
       padding-left: 30px;
     }
@@ -3595,17 +3598,18 @@
       padding-left: 40px;
     }
 
+    /* Mobile popup drawer background color */
     .ast-mobile-popup-drawer.active .ast-mobile-popup-inner {
       background-color: #ffffff;
-      ;
     }
 
+    /* Header background color */
     .ast-mobile-header-wrap .ast-mobile-header-content,
     .ast-desktop-header-content {
       background-color: #ffffff;
-      ;
     }
 
+    /* Remove extra padding */
     .ast-mobile-popup-content>*,
     .ast-mobile-header-content>*,
     .ast-desktop-popup-content>*,
@@ -3614,6 +3618,7 @@
       padding-bottom: 0;
     }
 
+    /* Align content flex-start */
     .content-align-flex-start .ast-builder-layout-element {
       justify-content: flex-start;
     }
@@ -3622,19 +3627,23 @@
       text-align: left;
     }
 
+    /* Mobile menu toggle close color */
     .ast-mobile-popup-drawer.active .menu-toggle-close {
       color: #3a3a3a;
     }
 
+    /* Header bar minimum height */
     .ast-mobile-header-wrap .ast-primary-header-bar,
     .ast-primary-header-bar .site-primary-header-wrap {
       min-height: 104px;
     }
 
+    /* Desktop header menu line height */
     .ast-desktop .ast-primary-header-bar .main-header-menu>.menu-item {
       line-height: 104px;
     }
 
+    /* Container and breadcrumbs padding */
     #masthead .ast-container,
     .site-header-focus-item+.ast-breadcrumbs-wrapper {
       max-width: 100%;
@@ -3642,6 +3651,7 @@
       padding-right: 35px;
     }
 
+    /* Mobile header padding */
     .ast-header-break-point #masthead .ast-mobile-header-wrap .ast-primary-header-bar,
     .ast-header-break-point #masthead .ast-mobile-header-wrap .ast-below-header-bar,
     .ast-header-break-point #masthead .ast-mobile-header-wrap .ast-above-header-bar {
@@ -3649,6 +3659,7 @@
       padding-right: 20px;
     }
 
+    /* Border-bottom style */
     .ast-header-break-point .ast-primary-header-bar {
       border-bottom-width: 0;
       border-bottom-color: #eaeaea;
@@ -3663,47 +3674,55 @@
       }
     }
 
+    /* Remove background image */
     .ast-primary-header-bar {
       background-image: none;
     }
 
-    @media (max-width:921px) {
+    /* Mobile header height adjustments */
+    @media (max-width: 921px) {
 
       .ast-mobile-header-wrap .ast-primary-header-bar,
       .ast-primary-header-bar .site-primary-header-wrap {
         min-height: 80px;
+        display: grid;
       }
     }
 
-    @media (max-width:544px) {
+    @media (max-width: 544px) {
 
       .ast-mobile-header-wrap .ast-primary-header-bar,
       .ast-primary-header-bar .site-primary-header-wrap {
         min-height: 64px;
+        display: grid;
       }
     }
 
+    /* Ensure primary header bar is visible */
     .ast-primary-header-bar {
       display: block;
     }
 
-    @media (max-width:921px) {
+    /* Adjust header display on breakpoints */
+    @media (max-width: 921px) {
       .ast-header-break-point .ast-primary-header-bar {
         display: grid;
       }
     }
 
-    @media (max-width:544px) {
+    @media (max-width: 544px) {
       .ast-header-break-point .ast-primary-header-bar {
         display: grid;
       }
     }
 
+    /* Header margins */
     .ast-hfb-header .site-header {
       margin-left: 5px;
       margin-right: 5px;
     }
 
+    /* Mobile menu trigger styling */
     [data-section="section-header-mobile-trigger"] .ast-button-wrap .ast-mobile-menu-trigger-minimal {
       color: var(--ast-global-color-5);
       border: none;
@@ -3720,6 +3739,7 @@
       color: var(--ast-global-color-5);
     }
 
+    /* Menu item adjustments */
     .ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children>.ast-menu-toggle {
       top: 0;
     }
@@ -3734,41 +3754,56 @@
       border-style: none;
     }
 
-    .ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children>.ast-menu-toggle {
-      top: 0;
-    }
-
-    @media (max-width:921px) {
+    /* Ensure mobile menu items are visible and properly positioned */
+    @media (max-width: 921px) {
       .ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children>.ast-menu-toggle {
         top: 0;
+        display: block;
+        /* Ensure toggle is displayed */
       }
 
       .ast-builder-menu-mobile .main-navigation .menu-item-has-children>.menu-link:after {
         content: unset;
+        /* Remove extra content if present */
       }
     }
 
-    @media (max-width:544px) {
+    @media (max-width: 544px) {
       .ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children>.ast-menu-toggle {
         top: 0;
+        display: block;
+        /* Ensure toggle is displayed */
       }
     }
 
+    /* Ensure the main navigation is displayed */
     .ast-builder-menu-mobile .main-navigation {
       display: block;
     }
 
-    @media (max-width:921px) {
+    /* Ensure the main navigation is displayed on mobile breakpoints */
+    @media (max-width: 921px) {
       .ast-header-break-point .ast-builder-menu-mobile .main-navigation {
         display: block;
       }
     }
 
-    @media (max-width:544px) {
+    @media (max-width: 544px) {
       .ast-header-break-point .ast-builder-menu-mobile .main-navigation {
         display: block;
       }
     }
+
+    /* Optional: Ensure background and positioning for mobile header */
+    .ast-mobile-header-wrap .ast-primary-header-bar {
+      background-color: #ffffff;
+      /* Ensure background color for visibility */
+      z-index: 1000;
+      /* Ensure it appears above other content */
+      position: relative;
+      /* Adjust positioning */
+    }
+
 
     :root {
       --e-global-color-astglobalcolor0: #cba590;
@@ -4430,13 +4465,25 @@
         max-width: 767px;
       }
 
+      .ast-container {
+        display: block;
+      }
+
       .e-con {
         --container-max-width: 767px;
       }
+
+      .ast-flex {
+        display: flex;
+      }
+    }
+
+    .ast-flex {
+      display: flex;
     }
 
     .elementor-11 .elementor-element.elementor-element-b9b6c5a {
-      --display: flex;
+      --display: block;
 
       --flex-direction: row;
       --container-widget-width: calc((1 - var(--container-widget-flex-grow)) * 100%);
@@ -4450,6 +4497,16 @@
       --padding-block-end: 0px;
       --padding-inline-start: 40px;
       --padding-inline-end: 40px;
+    }
+
+    html body {
+      --wp--custom--ast-default-block-top-padding: 3em;
+      --wp--custom--ast-default-block-right-padding: 3em;
+      --wp--custom--ast-default-block-bottom-padding: 3em;
+      --wp--custom--ast-default-block-left-padding: 3em;
+      --wp--custom--ast-container-width: 1200px;
+      --wp--custom--ast-content-width-size: 1200px;
+      --wp--custom--ast-wide-width-size: calc(1200px + var(--wp--custom--ast-default-block-left-padding) + var(--wp--custom--ast-default-block-right-padding));
     }
 
     .elementor-11 .elementor-element.elementor-element-b9b6c5a:not(.elementor-motion-effects-element-type-background),
@@ -6370,47 +6427,105 @@
       }
     }
 
-    @media(min-width:768px) {
-      .elementor-11 .elementor-element.elementor-element-f9deeef {
-        --width: 33.33%;
+    /* Mobile view adjustments */
+    @media (max-width: 767px) {
+      .elementor-11 .elementor-element.elementor-element-b9b6c5a {
+        --min-height: 100vh;
+        --padding-block-start: 0px;
+        --padding-block-end: 0px;
+        --padding-inline-start: 24px;
+        --padding-inline-end: 24px;
       }
 
-      .elementor-11 .elementor-element.elementor-element-2dd17a4 {
-        --width: 33.33%;
+      .elementor-11 .elementor-element.elementor-element-b9b6c5a:not(.elementor-motion-effects-element-type-background),
+      .elementor-11 .elementor-element.elementor-element-b9b6c5a>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+        background-position: bottom center;
       }
 
-      .elementor-11 .elementor-element.elementor-element-132d4ce {
-        --width: 33.33%;
+      .elementor-11 .elementor-element.elementor-element-ae129a1 {
+        --margin-block-start: 0px;
+        --margin-block-end: 0px;
+        --margin-inline-start: 0px;
+        --margin-inline-end: 0px;
+        --padding-block-start: 88px;
+        --padding-block-end: 280px;
+        --padding-inline-start: 0px;
+        --padding-inline-end: 0px;
       }
 
-      .elementor-11 .elementor-element.elementor-element-e05c935 {
-        --content-width: 800px;
-      }
-
-      .elementor-11 .elementor-element.elementor-element-d9ee755 {
-        --content-width: 800px;
-      }
-
-      .elementor-11 .elementor-element.elementor-element-75796a0 {
-        --width: 50%;
-      }
-
+      .elementor-11 .elementor-element.elementor-element-faf36fd,
+      .elementor-11 .elementor-element.elementor-element-af3fb9f,
+      .elementor-11 .elementor-element.elementor-element-5d6b6e1,
+      .elementor-11 .elementor-element.elementor-element-3ba3df6,
+      .elementor-11 .elementor-element.elementor-element-8d5208e,
+      .elementor-11 .elementor-element.elementor-element-f917055,
+      .elementor-11 .elementor-element.elementor-element-5d78f7c,
+      .elementor-11 .elementor-element.elementor-element-2efb28a,
+      .elementor-11 .elementor-element.elementor-element-55c99fc,
+      .elementor-11 .elementor-element.elementor-element-b251f01,
+      .elementor-11 .elementor-element.elementor-element-5d310b7,
+      .elementor-11 .elementor-element.elementor-element-fde4f02,
+      .elementor-11 .elementor-element.elementor-element-b986abe,
+      .elementor-11 .elementor-element.elementor-element-befd8e5,
+      .elementor-11 .elementor-element.elementor-element-525474a,
+      .elementor-11 .elementor-element.elementor-element-df8bf86,
+      .elementor-11 .elementor-element.elementor-element-4d541a7,
+      .elementor-11 .elementor-element.elementor-element-b4e3c2a,
+      .elementor-11 .elementor-element.elementor-element-0f63e7e,
+      .elementor-11 .elementor-element.elementor-element-d368d8d,
+      .elementor-11 .elementor-element.elementor-element-bc27aac,
+      .elementor-11 .elementor-element.elementor-element-d9ee755,
+      .elementor-11 .elementor-element.elementor-element-c37683d,
+      .elementor-11 .elementor-element.elementor-element-967db94,
+      .elementor-11 .elementor-element.elementor-element-cd58c47,
+      .elementor-11 .elementor-element.elementor-element-75796a0,
+      .elementor-11 .elementor-element.elementor-element-9fa0d35,
+      .elementor-11 .elementor-element.elementor-element-2a51067,
+      .elementor-11 .elementor-element.elementor-element-cdb0a2d,
+      .elementor-11 .elementor-element.elementor-element-ccaf3e4,
       .elementor-11 .elementor-element.elementor-element-ed29367 {
-        --width: 50%;
+        text-align: center;
+        /* Center text alignment for various elements */
+        width: 100%;
+        /* Ensure full width for mobile view */
+        max-width: 100%;
+        /* Prevent width exceeding container */
+      }
+
+      .elementor-11 .elementor-element.elementor-element-5f0f133,
+      .elementor-11 .elementor-element.elementor-element-0b435e6,
+      .elementor-11 .elementor-element.elementor-element-ee5aa40 {
+        margin: 0;
+        padding: 0;
       }
     }
 
-    @media(max-width:1024px) and (min-width:768px) {
-      .elementor-11 .elementor-element.elementor-element-f9deeef {
-        --width: 100%;
-      }
+    /* Tablet and small screen adjustments */
+    @media (min-width: 768px) and (max-width: 1024px) {
 
-      .elementor-11 .elementor-element.elementor-element-2dd17a4 {
-        --width: 50%;
-      }
-
+      .elementor-11 .elementor-element.elementor-element-f9deeef,
+      .elementor-11 .elementor-element.elementor-element-2dd17a4,
       .elementor-11 .elementor-element.elementor-element-132d4ce {
-        --width: 50%;
+        width: 100%;
+      }
+
+      .elementor-11 .elementor-element.elementor-element-e05c935,
+      .elementor-11 .elementor-element.elementor-element-d9ee755 {
+        --content-width: 800px;
+        /* Adjust content width for tablet view */
+      }
+    }
+
+    /* Larger screens adjustments */
+    @media (min-width: 1024px) {
+
+      .elementor-11 .elementor-element.elementor-element-f9deeef,
+      .elementor-11 .elementor-element.elementor-element-2dd17a4,
+      .elementor-11 .elementor-element.elementor-element-132d4ce,
+      .elementor-11 .elementor-element.elementor-element-75796a0,
+      .elementor-11 .elementor-element.elementor-element-ed29367 {
+        width: auto;
+        /* Adjust width for larger screens */
       }
     }
   </style>
@@ -6644,6 +6759,49 @@ flexibility(document.documentElement);
       .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
       .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
         background-image: none !important;
+      }
+    }
+
+    /* Ensure proper flex display for flex containers */
+    .ast-flex {
+      display: flex;
+      /* Correctly apply flex display */
+      flex-wrap: wrap;
+      /* Allow wrapping of flex items */
+    }
+
+    /* Ensure proper flex behavior for specific header sections */
+    .ast-builder-grid-row>.site-header-section {
+      flex-wrap: wrap;
+      /* Allow wrapping to avoid overflow */
+    }
+
+    /* Correct the display property for site header sections */
+    .site-header-section {
+      height: 100%;
+      min-height: 0;
+      align-items: center;
+      /* Center items vertically */
+    }
+
+    /* Additional fix if .ast-flex is being used incorrectly */
+    .ast-flex {
+      display: flex;
+      /* Ensure correct display for flex container */
+    }
+
+    /* Mobile-specific adjustments (optional) */
+    @media (max-width: 921px) {
+      .ast-builder-menu-mobile .main-navigation {
+        display: block;
+        /* Ensure main navigation is displayed */
+      }
+    }
+
+    @media (max-width: 544px) {
+      .ast-builder-menu-mobile .main-navigation {
+        display: block;
+        /* Ensure main navigation is displayed */
       }
     }
   </style>
